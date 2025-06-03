@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Convite Festa Junina</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fbe8a6;
+    margin: 0; padding: 0;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  header {
+    background: #d44d32;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  main {
+    margin: 2rem;
+  }
+  button {
+    background: #d44d32;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+  }
+  button:hover {
+    background: #a7361d;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #d44d32;
+    color: white;
+    padding: 0.5rem;
+  }
+  @media(max-width: 600px){
+    header {
+      font-size: 1.5rem;
+    }
+    button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+      margin: 0.3rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Convite Festa Junina 2025 🎉🌽🔥</header>
+
+<main>
+  <p>Você está convidado para a nossa animada Festa Junina!<br/>
+  Venha celebrar com muita comida típica, quadrilha e alegria.<br/>
+  Confirme sua presença para nos ajudar na organização.</p>
+  <button id="btnConfirmar">Confirmar Presença</button>
+  <button id="btnLista">Ver Lista de Confirmações</button>
+</main>
+
+<footer>© Festa Junina - Todos os direitos reservados</footer>
+
+<script>
+  document.getElementById('btnConfirmar').addEventListener('click', () => {
+    window.location.href = 'confirmar.html';
+  });
+  document.getElementById('btnLista').addEventListener('click', () => {
+    window.location.href = 'lista.html';
+  });
+</script>
+
+</body>
+</html>
